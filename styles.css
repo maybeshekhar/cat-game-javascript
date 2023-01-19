@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: none;
+}
+
+body {
+  background-image: url(./Images/home-overlay.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+button {
+  color: white;
+  border: 2px solid white;
+  background: transparent;
+  padding: 15px 45px;
+  font-size: 1.1rem;
+  margin-top: 3rem;
+  outline: none;
+  cursor: none;
+}
+
+.bloodspot {
+ position: absolute;
+ height: 50px;
+ transform: translate(-50%,-50%);
+ z-index: 2;
+}
+
+.terrorist {
+  height: 250px;
+}
+
+img::selection {
+  background: transparent;
+}
+
+.cursor {
+  position: absolute;
+  height: 390px;
+  transform: translate(-50, -50);
+  pointer-events: none;
+  z-index: 2;
+  transition: 0.3s transform ease;
+  transform-origin: 100% 100% ;
+}
